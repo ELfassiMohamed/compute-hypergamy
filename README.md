@@ -1,66 +1,48 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Compute Hypergamy — Machine Learning & Deep Learning Notebooks
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A collection of Jupyter notebooks exploring **Machine Learning** and **Deep Learning** techniques for **Natural Language Processing (NLP)**, with a focus on sentiment analysis and text clustering (primarily on IMDb movie reviews).
 
-## About Laravel
+## Contents
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+| Notebook | Description |
+|----------|-------------|
+| [`Bidirectional LSTM.ipynb`](Basic%20ML%20DL/Bidirectional%20LSTM.ipynb) | Bidirectional LSTM model built with TensorFlow / Keras for text classification. |
+| [`Clustering.ipynb`](Basic%20ML%20DL/Clustering.ipynb) | Introduction to clustering as an unsupervised machine learning technique. |
+| [`IMDb Sentiment Clustering (K-Means).ipynb`](Basic%20ML%20DL/IMDb%20Sentiment%20Clustering%20(K-Means).ipynb) | Unsupervised sentiment clustering on IMDb movie reviews using K-Means, TF-IDF, and sentiment indicators. |
+| [`Deep Learning NLP RNN LSTM.ipynb`](Basic%20ML%20DL/Deep%20Learning%20NLP%20RNN%20LSTM.ipynb) | Deep learning NLP comparing SimpleRNN and LSTM (Long Short-Term Memory) models. |
+| [`ML NLP Movie Review Classification.ipynb`](Basic%20ML%20DL/ML%20NLP%20Movie%20Review%20Classification.ipynb) | Machine learning classification of movie reviews using TF-IDF, BERT, Word2Vec embeddings with Logistic Regression and SVM. |
+| [`RNN IMDB Sentiment.ipynb`](Basic%20ML%20DL/RNN%20IMDB%20Sentiment.ipynb) | Recurrent Neural Network (RNN) for IMDB sentiment analysis. |
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Topics covered
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Recurrent networks:** RNN, LSTM, Bidirectional LSTM
+- **Deep learning:** TensorFlow / Keras
+- **Classical ML:** Logistic Regression, SVM, K-Means clustering
+- **NLP:** TF-IDF vectorization, Word2Vec, BERT embeddings, fine-tuning
+- **Applications:** Sentiment analysis, document clustering on IMDb movie reviews
 
-## Learning Laravel
+## Requirements
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The notebooks are designed to run in **Google Colab** (GPU/TPU) and use:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- Python 3
+- pandas, NumPy
+- scikit-learn
+- TensorFlow / Keras
+- Matplotlib, Seaborn
+- TextBlob, VADER (sentiment)
+- Transformers (BERT)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Getting Started
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/<your-username>/compute-hypergamy.git
+   cd compute-hypergamy
+   ```
+2. Open any `.ipynb` notebook in [Google Colab](https://colab.research.google.com) or Jupyter.
+3. If running in Colab, mount your Google Drive to access the dataset under `/content/drive/MyDrive/Colab Notebooks/Data`.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
